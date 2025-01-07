@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4D7D7;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    min-height: 100vh;
+    position: relative; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Diseño del título */
+.app-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.app-title h1 {
+    font-size: 4em; 
+    font-weight: 600;
+    color: #A3C9C9; 
+    background: linear-gradient(90deg, #A3C9C9, #D8B7DD);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px; 
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase; 
+}
+
+.app-title h1 span {
+    color: #3A4A5C; 
+    font-weight: 400;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.app-title h1 {
+    animation: fadeIn 1.5s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Start Button*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; 
+    margin-top: 20%; 
+}
+
+.hex-button {
+    width: 120px; 
+    height: 120px;
+    background-color: #5e8c8d; 
+    border: none;
+    outline: none;
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease; 
+}
+
+.hex-button img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.hex-button:hover {
+    cursor: pointer;
+}
+
+/* Añadimos la clase de rotación al hacer clic */
+.hex-button.rotated {
+    transform: rotate(360deg); /* Rota el botón 360 grados */
+}
+
+
+
+
+
+
+
+/*Media Query*/
+
+/* Media Query para pantallas grandes */
+@media (min-width: 768px) {
+    .app-title h1 {
+        font-size: 4.5em; /* Mayor tamaño de fuente para pantallas grandes */
+    }
+
+    .hex-button {
+        width: 150px; /* Tamaño más grande para pantallas grandes */
+        height: 150px;
+    }
+
+    .hex-button img {
+        width: 80%; /* Imagen más grande para pantallas grandes */
+        height: 80%;
+    }
+}
+
+
+/* Media Query para pantallas muy grandes */
+@media (min-width: 1024px) {
+    .app-title h1 {
+        font-size: 5em; /* Ajustar aún más para pantallas grandes */
+    }
+
+    .hex-button {* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #F4D7D7;
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .app-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .app-title h1 {
+        font-size: 3.2em; /* Reducido para pantallas pequeñas */
+        font-weight: 600;
+        color: #5e8c8d;
+        background: linear-gradient(90deg, #a3c9c9, #e7f2f2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    
+    .app-title h1 span {
+        color: #3e5c5a;
+        font-weight: 400;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px; /* Espacio suficiente para el botón */
+    }
+    
+    .hex-button {
+        width: 120px; /* Tamaño más pequeño para móviles */
+        height: 120px;
+        background-color: #5e8c8d; /* Color calmante para el fondo del hexágono */
+        border: none;
+        outline: none;
+        position: relative;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Forma de hexágono */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.6s ease; /* Transición suave para la rotación */
+    }
+    
+    .hex-button img {
+        width: 70%; /* Ajustado a un 70% en móviles para mejor visualización */
+        height: 70%;
+        object-fit: contain; /* Ajusta la imagen dentro del botón sin distorsionarla */
+    }
+    
+    .hex-button:hover {
+        cursor: pointer;
+    }
+    
+    /* Añadimos la clase de rotación al hacer clic */
+    .hex-button.rotated {
+        transform: rotate(360deg); /* Rota el botón 360 grados */
+    }
+    
+    /* Media Query para pantallas grandes */
+    @media (min-width: 768px) {
+        .app-title h1 {
+            font-size: 4.5em; /* Mayor tamaño de fuente para pantallas grandes */
+        }
+    
+        .hex-button {
+            width: 150px; /* Tamaño más grande para pantallas grandes */
+            height: 150px;
+        }
+    
+        .hex-button img {
+            width: 80%; /* Imagen más grande para pantallas grandes */
+            height: 80%;
+        }
+    }
+    
+    /* Media Query para pantallas muy grandes */
+    @media (min-width: 1024px) {
+        .app-title h1 {
+            font-size: 5em; /* Ajustar aún más para pantallas grandes */
+        }
+    
+        .hex-button {
+            width: 180px; /* Tamaño aún mayor para pantallas muy grandes */
+            height: 180px;
+        }
+    
+        .hex-button img {
+            width: 85%; /* Imagen más grande para pantallas muy grandes */
+            height: 85%;
+        }
+    }
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*Animaciones*/
+
+
+/* Efecto de animación suave al cargar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
