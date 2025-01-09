@@ -40,7 +40,7 @@ body {
     font-weight: 600;
     color: #A3C9C9; 
     background: linear-gradient(90deg, #A3C9C9, #D8B7DD);
-    -webkit-background-clip: text; 
+
     -webkit-text-fill-color: transparent;
     letter-spacing: 3px; 
     text-align: center;
@@ -165,7 +165,7 @@ body {
         font-weight: 600;
         color: #5e8c8d;
         background: linear-gradient(90deg, #a3c9c9, #e7f2f2);
-        -webkit-background-clip: text;
+     
         -webkit-text-fill-color: transparent;
         letter-spacing: 2px;
         text-align: center;
