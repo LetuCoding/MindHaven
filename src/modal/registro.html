@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <!-- Boxicons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+    <div class="background-blur"></div>
+    <div class="form-container">
+        <h1>Crear Cuenta</h1>
+        <form action="#" method="POST">
+            <!-- Nombre de usuario -->
+            <div class="form-group">
+                <i class="bx bx-user"></i>
+                <input type="text" id="username" name="username" placeholder="Nombre de usuario" required>
+            </div>
+
+            <!-- Correo electrónico -->
+            <div class="form-group">
+                <i class="bx bx-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+            </div>
+
+            <!-- Contraseña -->
+            <div class="form-group">
+                <i class="bx bx-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            </div>
+
+            <!-- Botón de registro -->
+            <button type="submit" class="btn-register">Registrar</button>
+        </form>
+        <p class="login-link">¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+    </div>
+</body>
+
+<style>/* Estilo general */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #F4D7D7, #F1A7A7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Fondo con desenfoque */
+    .background-blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(10px);
+        z-index: -1;
+    }
+    
+    /* Contenedor del formulario */
+    .form-container {
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+    
+    /* Título */
+    .form-container h1 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 30px;
+    }
+    
+    /* Grupos de formulario */
+    .form-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    /* Iconos */
+    .form-group i {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: #888;
+    }
+    
+    /* Campos de entrada */
+    .form-group input {
+        width: 80%;
+        padding: 12px 15px 12px 40px; /* Espacio para el icono */
+        border: 1px solid #ccc;
+        border-radius: 30px; /* Bordes redondeados */
+        font-size: 1rem;
+        color: #333;
+        outline: none;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        background: rgba(255, 255, 255, 0.6);
+    }
+    
+    /* Hover y focus */
+    .form-group input:focus {
+        border-color: #F1A7A7;
+        box-shadow: 0 0 8px rgba(241, 167, 167, 0.5);
+    }
+    
+    /* Botón de registro */
+    .btn-register {
+        background: linear-gradient(135deg, #F1A7A7, #F4D7D7);
+        color: #fff;
+        font-size: 1rem;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .btn-register:hover {
+        background-color: #F78686;
+        box-shadow: 0 4px 10px rgba(241, 167, 167, 0.5);
+    }
+    
+    /* Enlace de inicio de sesión */
+    .login-link {
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #666;
+    }
+    
+    .login-link a {
+        color: #F1A7A7;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .login-link a:hover {
+        text-decoration: underline;
+    }
+    </style>
+</html>
